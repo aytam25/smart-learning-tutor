@@ -50,7 +50,7 @@ subject = st.sidebar.selectbox("📘 اختر اسم الدرس", [
 # زر لتحديث التمارين
 if st.sidebar.button("🔄 تحديث التمارين"):
     st.session_state["lesson"] = load_lesson(subject)
-    st.success(f"✅ تم تحديث التمارين من الملف: ")#{subject}.json
+    st.success(f"✅ تم تحديث{subject} التمارين من الملف: ")# 
 
 # تحميل الدرس عند التشغيل
 if "lesson" not in st.session_state:
