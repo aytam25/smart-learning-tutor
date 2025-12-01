@@ -40,10 +40,7 @@ st.caption("يوظف NLP لتخصيص الشرح، وتصحيح الأخطاء �
 # الشريط الجانبي
 with st.sidebar:
     st.header("خيارات")
-   # واجهة اختيار الدرس
-subject = st.sidebar.selectbox("اختر اسم الدرس", ["math_basics", "python_basics", "english_basics", "logic_basics"])
-
-    
+    subject = st.selectbox("اختر المادة", ["math_basics"], index=0)
     st.session_state.subject = subject
     st.write("مستوى تقديري سيُحدّد تلقائيًا من الحوار.")
     if st.button("ملخص التقدم"):
