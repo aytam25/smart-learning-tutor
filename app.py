@@ -62,7 +62,23 @@ def get_direction(language):
 
 # تحديد اللغة من المستخدم أو من إعدادات التطبيق
 language = st.sidebar.selectbox("🌐 اختر اللغة", ["ar", "en"], index=0)
+language = "ar"
+L = labels[language]
 
+st.set_page_config(page_title=L["title"], page_icon="🎓", layout="wide")
+
+st.markdown(
+    """
+    <style>
+    html, body, [class*="css"] {
+        direction: rtl !important;
+        text-align: right !important;
+        font-family: 'Cairo', sans-serif;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # ضبط اتجاه الصفحة
 st.markdown(
     f"""<style>
