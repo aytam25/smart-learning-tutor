@@ -3,7 +3,24 @@ from core.tutor_agent import TutorAgent
 from core.knowledge_base import KnowledgeBase
 from core.persistence import Persistence
 from core.llm_provider import build_llm_provider
+import json
+import os
 
+def load_exercises(subject):
+    path = os.path.join("data", f"{subject}.json")
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+# واجهة اختيار الدرس
+subject = st.sidebar.selectbox("اختر اسم الدرس", ["math_basics", "python_basics", "english_basics", "logic_basics"])
+
+# زر التحديث
+if st.sidebar.button("🔄 تحديث التمارين"):
+    data = load_exercises(subject)
+    st.success(f"تم تحديث التمارين من الملف: {subject}.json")
+
+# تحميل التمارين تلقائيًا عند التشغيل
+data = load_exercises(subject)
 st.set_page_config(page_title="Smart Learning Tutor", page_icon="🎓", layout="wide")
 
 # حالة الجلسة
@@ -23,27 +40,11 @@ st.caption("يوظف NLP لتخصيص الشرح، وتصحيح الأخطاء �
 # الشريط الجانبي
 with st.sidebar:
     st.header("خيارات")
-    subject = st.selectbox("اختر المادة", ["math_basics"], index=0)
-    st.session_state.subject = subject
-    import streamlit as st
-import json
-import os
-
-def load_exercises(subject):
-    path = os.path.join("data", f"{subject}.json")
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-# واجهة اختيار الدرس
+   # واجهة اختيار الدرس
 subject = st.sidebar.selectbox("اختر اسم الدرس", ["math_basics", "python_basics", "english_basics", "logic_basics"])
 
-# زر التحديث
-if st.sidebar.button("🔄 تحديث التمارين"):
-    data = load_exercises(subject)
-    st.success(f"تم تحديث التمارين من الملف: {subject}.json")
-
-# تحميل التمارين تلقائيًا عند التشغيل
-data = load_exercises(subject)
+    
+    st.session_state.subject = subject
     st.write("مستوى تقديري سيُحدّد تلقائيًا من الحوار.")
     if st.button("ملخص التقدم"):
         summary = agent.get_progress_summary(st.session_state.user_id)
