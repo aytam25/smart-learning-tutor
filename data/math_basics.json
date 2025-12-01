@@ -1,0 +1,46 @@
+{
+  "subject": "math_basics",
+  "concepts": [
+    {
+      "name": "fractions",
+      "description": "الكسور: تمثل جزءًا من كل.",
+      "examples": [ "1/2 + 1/3", "تبسيط 4/8" ]
+    },
+    {
+      "name": "integers",
+      "description": "الأعداد الصحيحة: موجبة، سالبة، وصفر.",
+      "examples": [ "-3 + 5", "| -7 | = 7" ]
+    },
+    {
+      "name": "variables",
+      "description": "المتغيرات: رموز تمثل قيمًا غير معروفة.",
+      "examples": [ "x + 2 = 5" ]
+    }
+  ],
+  "exercises": [
+    {
+      "concept": "fractions",
+      "level": "beginner",
+      "prompt": "احسب: 1/2 + 1/2",
+      "answer": "1"
+    },
+    {
+      "concept": "fractions",
+      "level": "intermediate",
+      "prompt": "احسب: 1/2 + 1/3 (اعطِ الناتج في أبسط صورة)",
+      "answer": "5/6"
+    },
+    {
+      "concept": "integers",
+      "level": "beginner",
+      "prompt": "احسب: -3 + 5",
+      "answer": "2"
+    },
+    {
+      "concept": "variables",
+      "level": "beginner",
+      "prompt": "حل: x + 2 = 5 (ما قيمة x؟)",
+      "answer": "3"
+    }
+  ]
+}

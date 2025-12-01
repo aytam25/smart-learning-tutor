@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "type": "exercise",
+      "concept": "fractions",
+      "level": "beginner",
+      "correct": true
+    },
+    {
+      "type": "exercise",
+      "concept": "fractions",
+      "level": "beginner",
+      "correct": true
+    },
+    {
+      "type": "qa",
+      "text": "كيف اجمع الكسور",
+      "related": [
+        "fractions",
+        "integers"
+      ],
+      "level": "beginner"
+    }
+  ],
+  "stats": {
+    "correct": 2,
+    "attempts": 2
+  },
+  "level": "beginner"
+}
