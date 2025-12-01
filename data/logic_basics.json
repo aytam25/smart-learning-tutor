@@ -1,0 +1,88 @@
+{
+  "subject": "logic_basics",
+  "image": "logic_thinking.png",
+  "concepts": [
+    {
+      "name": "الحقيقة والباطل",
+      "description": "يُستخدم لتحديد ما إذا كان البيان صحيحًا أم خاطئًا.",
+      "examples": ["x = True", "y = False"]
+    },
+    {
+      "name": "العوامل المنطقية",
+      "description": "تُستخدم للربط بين الشروط باستخدام 'and' و 'or' و 'not'.",
+      "examples": ["x and y", "not x"]
+    },
+    {
+      "name": "العلاقات",
+      "description": "تُستخدم للمقارنة بين القيم باستخدام <، >، ==، !=.",
+      "examples": ["a > b", "x == y"]
+    },
+    {
+      "name": "الكيانات المنطقية",
+      "description": "تُستخدم لتنظيم البيانات باستخدام شروط مركبة.",
+      "examples": ["x in [1, 2, 3]", "if x and y:"]
+    }
+  ],
+  "exercises": [
+    {
+      "concept": "الحقيقة والباطل",
+      "level": "beginner",
+      "prompt": "ما ناتج: x = True; print(x)",
+      "answer": "True"
+    },
+    {
+      "concept": "الحقيقة والباطل",
+      "level": "intermediate",
+      "prompt": "ما ناتج: y = False; print(not y)",
+      "answer": "True"
+    },
+    {
+      "concept": "العوامل المنطقية",
+      "level": "beginner",
+      "prompt": "ما ناتج: True and False",
+      "answer": "False"
+    },
+    {
+      "concept": "العوامل المنطقية",
+      "level": "intermediate",
+      "prompt": "ما ناتج: not (1 > 0)",
+      "answer": "False"
+    },
+    {
+      "concept": "العلاقات",
+      "level": "beginner",
+      "prompt": "ما ناتج: 4 + 5 == 9",
+      "answer": "True"
+    },
+    {
+      "concept": "العلاقات",
+      "level": "advanced",
+      "prompt": "ما ناتج: 7 != 7 or 3 < 5",
+      "answer": "True"
+    },
+    {
+      "concept": "الكيانات المنطقية",
+      "level": "beginner",
+      "prompt": "ما ناتج: x = 1; print(x in [1, 2, 3])",
+      "answer": "True"
+    },
+    {
+      "concept": "الكيانات المنطقية",
+      "level": "intermediate",
+      "prompt": "ما ناتج: x = True; y = False; print(x and y)",
+      "answer": "False"
+    },
+    {
+      "concept": "الكيانات المنطقية",
+      "level": "advanced",
+      "prompt": "ما ناتج: (x == 3 or y == 4) and z == 1",
+      "answer": "صحيح إذا تحقق الشرطان معًا"
+    },
+    {
+      "concept": "العوامل المنطقية",
+      "level": "advanced",
+      "prompt": "ما ناتج: not (True and False)",
+      "answer": "True"
+    }
+  ]
+}

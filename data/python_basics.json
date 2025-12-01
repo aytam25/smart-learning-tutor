@@ -1,0 +1,87 @@
+{
+  "subject": "python_basics",
+  "concepts": [
+    {
+      "name": "المتغيرات",
+      "description": "المتغيرات تُستخدم لتخزين البيانات مثل الأرقام والنصوص.",
+      "examples": ["x = 5", "name = 'Mohmd'"]
+    },
+    {
+      "name": "الشروط",
+      "description": "الشروط تُستخدم لاتخاذ قرارات باستخدام if و else.",
+      "examples": ["if x > 0: print('موجب')"]
+    },
+    {
+      "name": "الحلقات",
+      "description": "الحلقات تُستخدم لتكرار التعليمات باستخدام for أو while.",
+      "examples": ["for i in range(5): print(i)"]
+    },
+    {
+      "name": "الدوال",
+      "description": "الدوال تُستخدم لتعريف وظائف قابلة لإعادة الاستخدام.",
+      "examples": ["def مرحبًا(): print('أهلاً')"]
+    }
+  ],
+  "exercises": [
+    {
+      "concept": "المتغيرات",
+      "level": "beginner",
+      "prompt": "ما ناتج: x = 3; x + 2",
+      "answer": "5"
+    },
+    {
+      "concept": "المتغيرات",
+      "level": "intermediate",
+      "prompt": "ما نوع المتغير في: name = 'Mohmd'",
+      "answer": "str"
+    },
+    {
+      "concept": "الشروط",
+      "level": "beginner",
+      "prompt": "ما ناتج: x = -1; if x > 0: print('موجب') else: print('سالب')",
+      "answer": "سالب"
+    },
+    {
+      "concept": "الشروط",
+      "level": "intermediate",
+      "prompt": "ما ناتج: x = 10; if x % 2 == 0: print('زوجي')",
+      "answer": "زوجي"
+    },
+    {
+      "concept": "الحلقات",
+      "level": "beginner",
+      "prompt": "كم مرة تُطبع الكلمة؟ for i in range(3): print('مرحبا')",
+      "answer": "3"
+    },
+    {
+      "concept": "الحلقات",
+      "level": "intermediate",
+      "prompt": "ما ناتج: i = 0; while i < 2: print(i); i += 1",
+      "answer": "0\n1"
+    },
+    {
+      "concept": "الدوال",
+      "level": "beginner",
+      "prompt": "ما ناتج: def سلام(): print('أهلاً'); سلام()",
+      "answer": "أهلاً"
+    },
+    {
+      "concept": "الدوال",
+      "level": "intermediate",
+      "prompt": "ما ناتج: def جمع(a, b): return a + b; print(جمع(2, 3))",
+      "answer": "5"
+    },
+    {
+      "concept": "المتغيرات",
+      "level": "advanced",
+      "prompt": "ما ناتج: x = '5'; y = int(x) + 2",
+      "answer": "7"
+    },
+    {
+      "concept": "الشروط",
+      "level": "advanced",
+      "prompt": "ما ناتج: x = 3; y = 4; if x < y and y < 10: print('صحيح')",
+      "answer": "صحيح"
+    }
+  ]
+}

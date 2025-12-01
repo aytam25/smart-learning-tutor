@@ -1,0 +1,87 @@
+{
+  "subject": "english_basics",
+  "concepts": [
+    {
+      "name": "المفردات",
+      "description": "تعلم كلمات جديدة ومعانيها بالإنجليزية.",
+      "examples": ["apple = تفاحة", "run = يجري"]
+    },
+    {
+      "name": "القواعد",
+      "description": "تعلم تركيب الجمل الصحيحة بالإنجليزية.",
+      "examples": ["I am happy", "She goes to school"]
+    },
+    {
+      "name": "الأزمنة",
+      "description": "تعلم استخدام الماضي والحاضر والمستقبل.",
+      "examples": ["I went yesterday", "He will come tomorrow"]
+    },
+    {
+      "name": "الأسئلة",
+      "description": "تعلم كيفية طرح الأسئلة بالإنجليزية.",
+      "examples": ["What is your name?", "Where do you live?"]
+    }
+  ],
+  "exercises": [
+    {
+      "concept": "المفردات",
+      "level": "beginner",
+      "prompt": "ما معنى كلمة 'book'؟",
+      "answer": "كتاب"
+    },
+    {
+      "concept": "المفردات",
+      "level": "intermediate",
+      "prompt": "ما معنى كلمة 'beautiful'؟",
+      "answer": "جميل"
+    },
+    {
+      "concept": "القواعد",
+      "level": "beginner",
+      "prompt": "اختر الجملة الصحيحة: (I is happy / I am happy)",
+      "answer": "I am happy"
+    },
+    {
+      "concept": "القواعد",
+      "level": "intermediate",
+      "prompt": "اختر الجملة الصحيحة: (She go to school / She goes to school)",
+      "answer": "She goes to school"
+    },
+    {
+      "concept": "الأزمنة",
+      "level": "beginner",
+      "prompt": "ما الزمن المستخدم في: I eat breakfast every day",
+      "answer": "زمن المضارع البسيط"
+    },
+    {
+      "concept": "الأزمنة",
+      "level": "intermediate",
+      "prompt": "ما الزمن المستخدم في: He was sleeping at 10 PM",
+      "answer": "زمن الماضي المستمر"
+    },
+    {
+      "concept": "الأسئلة",
+      "level": "beginner",
+      "prompt": "ما السؤال المناسب لمعرفة الاسم؟",
+      "answer": "What is your name?"
+    },
+    {
+      "concept": "الأسئلة",
+      "level": "intermediate",
+      "prompt": "ما السؤال المناسب لمعرفة المكان؟",
+      "answer": "Where do you live?"
+    },
+    {
+      "concept": "القواعد",
+      "level": "advanced",
+      "prompt": "اختر الجملة الصحيحة: (If I were you / If I was you)",
+      "answer": "If I were you"
+    },
+    {
+      "concept": "الأزمنة",
+      "level": "advanced",
+      "prompt": "ما الزمن المستخدم في: By next year, I will have graduated",
+      "answer": "زمن المستقبل التام"
+    }
+  ]
+}
