@@ -8,6 +8,23 @@ from core.persistence import Persistence
 from core.llm_provider import build_llm_provider
 
 # إعداد الواجهة
+# تحديد اتجاه الواجهة حسب اللغة
+def get_direction(language):
+    return "rtl" if language == "ar" else "ltr"
+
+# تحديد اللغة من المستخدم أو من إعدادات التطبيق
+language = st.sidebar.selectbox("🌐 اختر اللغة", ["ar", "en"], index=0)
+
+# ضبط اتجاه الصفحة
+st.markdown(
+    f"""<style>
+    .reportview-container .main {{
+        direction: {get_direction(language)};
+        text-align: {"right" if language == "ar" else "left"};
+    }}
+    </style>""",
+    unsafe_allow_html=True
+)
 st.set_page_config(page_title="نظام تعليمي ذكي", page_icon="🎓", layout="wide")
 st.title("🎓    Smart Learning Tutor  - نظام تعليمي ذكي ")
 st.subheader("🎓    تصميم وبرمجة الباحثة اسراء كتانة  - الاشراف التربوي ")
