@@ -6,9 +6,57 @@ from core.tutor_agent import TutorAgent
 from core.knowledge_base import KnowledgeBase
 from core.persistence import Persistence
 from core.llm_provider import build_llm_provider
-
+labels = {
+    "ar": {
+        "title": "🎓 نظام تعليمي ذكي",
+        "subtitle": "🎓 تصميم وبرمجة الباحثة إسراء كتانة — الإشراف التربوي",
+        "caption": "يوظف NLP لتخصيص الشرح، وتصحيح الأخطاء خطوة بخطوة، وتمارين مناسبة للمستوى.",
+        "ask": "❓ اسأل عن المفاهيم",
+        "question_placeholder": "مثال: ما هو المتغير؟ أو كيف أجمع الكسور؟",
+        "answer_button": "إجابة مخصصة",
+        "exercise": "🧩 تمارين تفاعلية",
+        "select_subject": "📘 اختر اسم الدرس",
+        "select_concept": "اختر مفهومًا",
+        "select_level": "🎯 اختر المستوى",
+        "generate_exercise": "ولّد تمرين",
+        "reset_exercise": "🔁 إعادة تعيين التمرين",
+        "show_hint": "💡 عرض تلميح",
+        "your_answer": "✍️ إجابتك",
+        "check_answer": "تصحيح الإجابة",
+        "score": "📊 النتيجة",
+        "feedback": "🔎 تغذية راجعة",
+        "next_step": "➡️ الخطوة التالية المقترحة",
+        "speak_answer": "🔊 تشغيل الإجابة صوتيًا",
+        "record_voice": "🎙️ تسجيل السؤال بالصوت",
+        "written_question": "📄 السؤال المكتوب:"
+    },
+    "en": {
+        "title": "🎓 Smart Learning Tutor",
+        "subtitle": "🎓 Designed and developed by Esraa Katala — Educational Supervision",
+        "caption": "Uses NLP to personalize explanations, step-by-step correction, and level-based exercises.",
+        "ask": "❓ Ask about concepts",
+        "question_placeholder": "Example: What is a variable? Or how do I add fractions?",
+        "answer_button": "Custom Answer",
+        "exercise": "🧩 Interactive Exercises",
+        "select_subject": "📘 Select a subject",
+        "select_concept": "Choose a concept",
+        "select_level": "🎯 Choose level",
+        "generate_exercise": "Generate Exercise",
+        "reset_exercise": "🔁 Reset Exercise",
+        "show_hint": "💡 Show Hint",
+        "your_answer": "✍️ Your Answer",
+        "check_answer": "Check Answer",
+        "score": "📊 Score",
+        "feedback": "🔎 Feedback",
+        "next_step": "➡️ Suggested Next Step",
+        "speak_answer": "🔊 Speak Answer",
+        "record_voice": "🎙️ Record Question",
+        "written_question": "📄 Written Question:"
+    }
+}
 # إعداد الواجهة
 # تحديد اتجاه الواجهة حسب اللغة
+
 def get_direction(language):
     return "rtl" if language == "ar" else "ltr"
 
